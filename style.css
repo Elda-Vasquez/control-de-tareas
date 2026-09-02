@@ -1,0 +1,370 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+/* Seleccionamos todos los elementos de la página */
+* {
+    box-sizing: border-box; /* Hace que los tamaños incluyan el borde y el relleno */
+}
+
+
+/* =====================================================
+   CUERPO DE LA PÁGINA
+===================================================== */
+
+/* Seleccionamos el cuerpo completo de la página */
+body {
+
+    margin: 0; /* Eliminamos el margen predeterminado */
+
+    padding: 40px 20px; /* Agregamos espacio alrededor del contenido */
+
+    font-family: Arial, sans-serif; /* Definimos el tipo de letra */
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #9333ea
+    ); /* Creamos un fondo degradado morado */
+
+    min-height: 100vh; /* Hacemos que ocupe como mínimo toda la pantalla */
+
+    color: #1e293b; /* Definimos el color general del texto */
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+/* Seleccionamos el contenedor principal */
+.contenedor {
+
+    max-width: 850px; /* Establecemos el ancho máximo */
+
+    margin: auto; /* Centramos el contenedor */
+
+    padding: 35px; /* Agregamos espacio interno */
+
+    background: white; /* Colocamos fondo blanco */
+
+    border-radius: 20px; /* Redondeamos las esquinas */
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* Agregamos una sombra */
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+===================================================== */
+
+/* Seleccionamos el título h1 */
+h1 {
+
+    text-align: center; /* Centramos el título */
+
+    font-size: 36px; /* Definimos el tamaño del título */
+
+    color: #4f46e5; /* Le damos color morado */
+
+    margin-bottom: 10px; /* Agregamos espacio debajo */
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+/* Seleccionamos la descripción */
+.descripcion {
+
+    text-align: center; /* Centramos el texto */
+
+    color: #64748b; /* Establecemos un color gris */
+
+    font-size: 17px; /* Definimos el tamaño */
+
+    margin-bottom: 30px; /* Agregamos espacio debajo */
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+/* Seleccionamos el contenedor del formulario */
+.formulario {
+
+    display: flex; /* Colocamos los elementos en una fila */
+
+    gap: 10px; /* Dejamos espacio entre el campo y el botón */
+
+    margin-bottom: 30px; /* Dejamos espacio debajo */
+}
+
+
+/* =====================================================
+   CAMPO DE TEXTO
+===================================================== */
+
+/* Seleccionamos el campo donde escribimos la tarea */
+.formulario input {
+
+    flex: 1; /* Permite que el campo ocupe el espacio disponible */
+
+    padding: 14px; /* Agregamos espacio interno */
+
+    font-size: 16px; /* Definimos el tamaño del texto */
+
+    border: 2px solid #c7d2fe; /* Colocamos un borde morado claro */
+
+    border-radius: 10px; /* Redondeamos las esquinas */
+
+    outline: none; /* Quitamos el borde predeterminado */
+}
+
+
+/* Cambiamos el estilo cuando seleccionamos el campo */
+.formulario input:focus {
+
+    border-color: #4f46e5; /* Cambiamos el borde a morado */
+}
+
+
+/* =====================================================
+   BOTÓN AGREGAR
+===================================================== */
+
+/* Seleccionamos el botón de agregar */
+.formulario button {
+
+    padding: 14px 22px; /* Agregamos espacio dentro del botón */
+
+    border: none; /* Quitamos el borde */
+
+    border-radius: 10px; /* Redondeamos las esquinas */
+
+    background: #4f46e5; /* Colocamos color morado */
+
+    color: white; /* Ponemos el texto blanco */
+
+    font-size: 16px; /* Definimos el tamaño del texto */
+
+    font-weight: bold; /* Hacemos el texto más grueso */
+
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+}
+
+
+/* Cambiamos el botón cuando pasamos el mouse */
+.formulario button:hover {
+
+    background: #3730a3; /* Oscurecemos el color */
+}
+
+
+/* =====================================================
+   TÍTULO DE MIS TAREAS
+===================================================== */
+
+/* Seleccionamos el título h2 dentro de la lista */
+.lista-contenedor h2 {
+
+    color: #4f46e5; /* Ponemos el título de color morado */
+
+    border-bottom: 3px solid #e0e7ff; /* Agregamos una línea debajo */
+
+    padding-bottom: 10px; /* Separamos el texto de la línea */
+}
+
+
+/* =====================================================
+   LISTA DE TAREAS
+===================================================== */
+
+/* Seleccionamos la lista */
+ul {
+
+    padding: 0; /* Eliminamos el espacio interno */
+
+    list-style: none; /* Eliminamos los puntos de la lista */
+}
+
+
+/* Seleccionamos cada tarea */
+li {
+
+    display: flex; /* Colocamos el contenido en una fila */
+
+    align-items: center; /* Centramos verticalmente */
+
+    gap: 8px; /* Dejamos espacio entre los elementos */
+
+    padding: 15px; /* Agregamos espacio interno */
+
+    margin-bottom: 12px; /* Separamos una tarea de otra */
+
+    background: #f5f3ff; /* Colocamos un fondo morado muy claro */
+
+    border-left: 5px solid #6366f1; /* Agregamos una línea morada */
+
+    border-radius: 10px; /* Redondeamos las esquinas */
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /* Agregamos una pequeña sombra */
+}
+
+
+/* =====================================================
+   TEXTO DE LA TAREA
+===================================================== */
+
+/* Seleccionamos el texto de cada tarea */
+li span {
+
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+
+    font-size: 16px; /* Definimos el tamaño del texto */
+
+    font-weight: bold; /* Hacemos el texto más visible */
+}
+
+
+/* =====================================================
+   BOTONES DE LAS TAREAS
+===================================================== */
+
+/* Seleccionamos los botones que aparecen junto a las tareas */
+li button {
+
+    border: none; /* Eliminamos el borde */
+
+    padding: 9px 13px; /* Agregamos espacio interno */
+
+    border-radius: 7px; /* Redondeamos las esquinas */
+
+    color: white; /* Colocamos texto blanco */
+
+    font-weight: bold; /* Hacemos el texto más grueso */
+
+    cursor: pointer; /* Cambiamos el cursor */
+}
+
+
+/* =====================================================
+   BOTÓN ACTUALIZAR
+===================================================== */
+
+/* Color del botón actualizar */
+.btn-editar {
+
+    background: #f59e0b; /* Color amarillo/anaranjado */
+}
+
+
+/* Efecto al pasar el mouse */
+.btn-editar:hover {
+
+    background: #d97706; /* Color más oscuro */
+}
+
+
+/* =====================================================
+   BOTÓN COMPLETAR
+===================================================== */
+
+/* Color del botón completar */
+.btn-completar {
+
+    background: #22c55e; /* Color verde */
+}
+
+
+/* Efecto al pasar el mouse */
+.btn-completar:hover {
+
+    background: #16a34a; /* Verde más oscuro */
+}
+
+
+/* =====================================================
+   BOTÓN BORRAR
+===================================================== */
+
+/* Color del botón borrar */
+.btn-eliminar {
+
+    background: #ef4444; /* Color rojo */
+}
+
+
+/* Efecto al pasar el mouse */
+.btn-eliminar:hover {
+
+    background: #dc2626; /* Rojo más oscuro */
+}
+
+
+/* =====================================================
+   CONTADOR
+===================================================== */
+
+/* Seleccionamos el contador */
+.contador {
+
+    margin-top: 25px; /* Dejamos espacio arriba */
+
+    padding: 15px; /* Agregamos espacio interno */
+
+    text-align: center; /* Centramos el texto */
+
+    background: #eef2ff; /* Fondo morado claro */
+
+    border-radius: 10px; /* Redondeamos las esquinas */
+
+    color: #4338ca; /* Color morado */
+
+    font-size: 17px; /* Tamaño del texto */
+
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+/* =====================================================
+   ADAPTACIÓN PARA CELULARES
+===================================================== */
+
+/* Estas reglas se aplican cuando la pantalla es pequeña */
+@media (max-width: 600px) {
+
+    .contenedor {
+
+        padding: 20px; /* Reducimos el espacio interno */
+    }
+
+
+    .formulario {
+
+        flex-direction: column; /* Colocamos los elementos uno debajo de otro */
+    }
+
+
+    .formulario button {
+
+        width: 100%; /* Hacemos que el botón ocupe todo el ancho */
+    }
+
+
+    li {
+
+        flex-direction: column; /* Colocamos los elementos verticalmente */
+
+        align-items: stretch; /* Hacemos que ocupen todo el ancho */
+    }
+
+
+    li button {
+
+        width: 100%; /* Los botones ocupan todo el ancho */
+    }
+
+}

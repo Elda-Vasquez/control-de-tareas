@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Indica que estamos utilizando HTML5 -->
+<html lang="es"> <!-- Inicia el documento HTML y establece el idioma español -->
+
+<head> <!-- Inicia la sección de configuración de la página -->
+
+    <meta charset="UTF-8"> <!-- Permite utilizar tildes, ñ y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página se adapte a diferentes pantallas -->
+
+    <title>Control de Tareas</title> <!-- Define el nombre que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="./style.css"> <!-- Conecta el archivo HTML con nuestro archivo CSS -->
+
+</head> <!-- Finaliza la sección de configuración -->
+
+<body> <!-- Inicia todo el contenido visible de la página -->
+
+
+    <!-- Contenedor principal de todo el sistema -->
+    <div class="contenedor">
+
+        <!-- Título principal de la página -->
+        <h1>📋 Control de Tareas</h1>
+
+        <!-- Pequeña descripción del sistema -->
+        <p class="descripcion">
+            Organiza y administra tus tareas
+        </p>
+
+
+        <!-- =================================================
+             ÁREA PARA CREAR TAREAS
+        ================================================== -->
+
+        <!-- Contenedor del formulario -->
+        <div class="formulario">
+
+            <!-- Campo donde el usuario escribe una tarea -->
+            <input
+                type="text"
+                id="tareaInput"
+                placeholder="Escribe una tarea..."
+            >
+
+            <!-- Botón que ejecuta la función agregarTarea() -->
+            <button onclick="agregarTarea()">
+                + Agregar
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             ÁREA DONDE SE MUESTRAN LAS TAREAS
+        ================================================== -->
+
+        <!-- Contenedor de la lista -->
+        <div class="lista-contenedor">
+
+            <!-- Título de la lista -->
+            <h2>📝 Mis tareas</h2>
+
+            <!-- JavaScript colocará aquí las tareas -->
+            <ul id="listaTareas"></ul>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTADOR DE TAREAS
+        ================================================== -->
+
+        <!-- Contenedor del contador -->
+        <div class="contador">
+
+            <!-- JavaScript cambiará este texto automáticamente -->
+            <p id="contador">
+                Tareas registradas: 0
+            </p>
+
+        </div>
+
+
+    </div> <!-- Finaliza el contenedor principal -->
+
+
+    <!-- Conecta el HTML con el archivo JavaScript -->
+    <script src="./script.js"></script>
+
+</body> <!-- Finaliza el contenido visible -->
+
+</html> <!-- Finaliza el documento HTML -->
